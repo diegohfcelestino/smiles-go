@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#41414C" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+  <title>SmileGo</title>
+
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/partials/page-header.css" />
+  <link rel="stylesheet" href="/styles/partials/cards.css" />
+  <link rel="stylesheet" href="/styles/partials/buttons.css" />
+  <link rel="stylesheet" href="/styles/partials/modal.css" />
+  <link rel="stylesheet" href="/styles/partials/animations.css" />
+  <link rel="stylesheet" href="/styles/pages/index.css" />
+  <link rel="stylesheet" href="/public/jogos/velha/Tik_Tak_Toe_V1/index.html">
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <script src="/scripts/index.js" defer type="module"></script>
+
+</head>
+
+<body id="page-index">
+  <header class="page-header">
+    <div class="container">
+      <section id="top" class="animate-up">
+        <h2 class="sr-only">Homepage</h2>
+        <img id="logo" src="/images/go.png" alt="Logo" />
+        <span id="notification">
+          <img src="/images/alert-octagon.svg" alt="Alerta" />
+          Olá Ana, você possui 6.000 Milhas
+        </span>
+        <a href="/profile" id="avatar-profile">
+          <p>Ana<span>Ver perfil</span></p>
+          <img src="/images/perfil.png" />
+        </a>
+      </section>
+
+      <div class="separator"></div>
+
+      <section id="summary" class="animate-up delay-1">
+        <h2 class="sr-only">Sumário</h2>
+
+        <div class="info">
+          <div class="total">
+            <strong>2</strong>
+            Viagens Planejadas
+          </div>
+          <div class="in-progress">
+            <strong>1</strong>
+            Em andamento
+          </div>
+          <div class="finished">
+            <strong>2</strong>
+            Viagens Inesquecíveis
+          </div>
+        </div>
+        <a class="button orange" href="">
+          <span>
+            <img src="/images/whats.svg" alt="onvide um amigo" />
+          </span>
+          <span>
+            <img src="/images/gmail.svg" alt="Convide um amigo" />
+          </span>
+          Convide um amigo
+        </a>
+        <a class="button orange" href="/job">
+          <span>
+            <img src="/images/plus-24.svg" alt="Nova Viagem" />
+          </span>
+          Adicionar Viagem
+        </a>
+      </section>
+    </div>
+  </header>
+
+  <div class="container">
+    <main class="animate-up delay-2">
+      <h1 class="sr-only">Viagens</h1>
+
+      <div class="cards">
+        <div class="cards2">
+          <div class="progresso progresso-pai ativa">
+            <div class="progresso-barra" data-ls-module="progressBar" role="progressbar" aria-valuenow="75"
+              class="ls-animated">
+              <div id="label">75%</div>
+            </div>
+          </div>
+          <div class="card progress" data-id="1">
+            <div class="id column">1</div>
+            <div class="name column">
+              Maceió
+            </div>
+            <div class="deadline column">
+              <span>Tempo planejado</span>
+              <p>150 dias para a viagem</p>
+            </div>
+            <div class="amount column">
+              <span>Valor</span>
+              <p>8.000 Milhas</p>
+              <span>ou</span>
+              <p>R$ 3500,00</p>
+            </div>
+            <div class="status badge column">
+              Em andamento
+            </div>
+            <div class="actions column flex">
+              <p class="sr-only">Ações</p>
+              <a href="/job/edit" class="button white edit" title="Editar Viagem">
+                <img src="/images/edit-24.svg" alt="Editar Viagem" />
+              </a>
+              <button class="delete button white" title="Excluir Job">
+                <img src="/images/trash-24.svg" alt="Excluir Viagem" />
+              </button>
+            </div>
+          </div>
+          <!-- end card -->
+           
+          <div class="progresso progresso-pai ativa">
+            <div class="progresso-barra2" data-ls-module="progressBar" role="progressbar" aria-valuenow="75"
+              class="ls-animated">
+              <div id="label">0%</div>
+            </div>
+          </div>
+          <div class="card done" data-id="2">
+            <div class="id column">2</div>
+            <div class="name column">
+              Balneário Camboriú
+            </div>
+            <div class="deadline column">
+              <span>Tempo planejado</span>
+              <p>490 dias para a viagem</p>
+            </div>
+            <div class="amount column">
+              <span>Valor</span>
+              <p>10.000 Milhas</p>
+              <span>ou</span>
+              <p>R$ 4500,00</p>
+            </div>
+            <div class="status badge column">
+              Não Iniciado
+            </div>
+            <div class="actions column flex">
+              <p class="sr-only">Ações</p>
+              <a href="/job/edit" class="button white edit" title="Editar Job">
+                <img src="/images/edit-24.svg" alt="Editar Viagem" />
+              </a>
+              <button class="delete button white" title="Excluir Job">
+                <img src="/images/trash-24.svg" alt="Excluir Job" />
+              </button>
+            </div>
+          </div>
+        </div>
+      <!-- end cards -->
+    </main>
+  </div>
+
+  <div class="container">
+    <main class="animate-up delay-2">
+      <h1 class="sr-only">Bonificações</h1>
+      
+      
+      <div class="cards ">
+        <div class="cards dez">
+          <p class="premium">O que pretende fazer hoje?</p>
+
+          <div class="card progress acoes" data-id="1">
+            <div class="id column "></div>
+            <div class="name column">
+              Fazer compras
+            </div>
+            <div class="deadline column ">
+              <span id="textocard2">Quantas compras e milhas já gastas</span>
+              <p>5 compras, 3500 milhas</p>
+            </div>
+            <div class="amount column">
+              <span></span>
+              <p></p>
+              <span></span>
+              <p></p>
+            </div>
+            <div class="actions column flex ">
+              <p class="sr-only">Ações</p>
+              <button>
+                <a class="status badge column acao" href="">
+                  Iniciar
+                </a>
+              </button>
+            </div>
+            <div class="actions column flex">
+              <p class="sr-only">Ações</p>
+            </div>
+          </div>
+
+            <div class="card progress acoes" data-id="1">
+              <div class="id column"></div>
+              <div class="name column">
+                Doar
+              </div>
+              <div class="deadline column">
+                <span id="textocard2">Quantas famílias já ajudou</span>
+                <p>3 famílias</p>
+              </div>
+              <div class="amount column">
+                <span></span>
+                <p></p>
+                <span></span>
+                <p></p>
+              </div>
+              <div class="actions column flex">
+                <p class="sr-only">Ações</p>
+                <button>
+                  <a class="status badge column acao" href="">
+                    Iniciar
+                  </a>
+                </button>
+              </div>
+              <div class="actions column flex">
+                <p class="sr-only">Ações</p>
+              </div>
+            </div>
+
+          <div class="card progress acoes" data-id="1">
+            <div class="id column"></div>
+            <div class="name column">
+              Jogar
+            </div>
+            <div class="deadline column">
+              <span id="textocard2">Quantidade de horas jogadas</span>
+              <p>10h05min </p>
+            </div>
+            <div class="amount column">
+              <span></span>
+              <p></p>
+              <span></span>
+              <p></p>
+            </div>
+            <div class="actions column flex">
+              <p class="sr-only">Ações</p>
+              <button>
+                <a class="status badge column acao" href="/Tik_Tak_Toe_V1/index.html">
+                  Iniciar
+                </a>
+              </button>
+            </div>
+            <div class="actions column flex">
+              <p class="sr-only">Ações</p>
+            </div>
+          </div>
+
+            <div class="card progress acoes" data-id="1">
+              <div class="id column"></div>
+              <div class="name column">
+                Caminhar
+              </div>
+              <div class="deadline column">
+                <span id="textocard2">Tempo e distancia de caminhada</span>
+                <p>53h0min, percorreu 14 km </p>
+              </div>
+              <div class="amount column">
+                <span></span>
+                <p></p>
+                <span></span>
+                <p></p>
+              </div>
+              <div class="actions column flex">
+                <p class="sr-only">Ações</p>
+                <button>
+                  <a class="status badge column acao" href="">
+                    Iniciar
+                  </a>
+                </button>
+              </div>
+              <div class="actions column flex">
+                <p class="sr-only">Ações</p>
+              </div>
+            </div>
+
+          <div class="card progress acoes" data-id="1">
+            <div class="id column"></div>
+            <div class="name column">
+              Assistir vídeos
+            </div>
+            <div class="deadline column">
+              <span id="textocard2">Tempo e quantidade de vídeos</span>
+              <p>12h17min, 29 vídeos assistidos </p>
+            </div>
+            <div class="amount column">
+              <span></span>
+              <p></p>
+              <span></span>
+              <p></p>
+            </div>
+            <div class="actions column flex">
+              <p class="sr-only">Ações</p>
+              <button>
+                <a class="status badge column acao" href="/videos">
+                  Iniciar
+                </a>
+              </button>
+            </div>
+            <div class="actions column flex">
+              <p class="sr-only">Ações</p>
+            </div>
+          </div>
+
+          <div class="card progress acoes" data-id="1">
+            <div class="id column"></div>
+            <div class="name column">
+              Tour pelo site
+            </div>
+            <div class="deadline column">
+              <p id="textocard2">Pesquisar viagens, serviços </p>
+              <p>e muito mais </p>
+            </div>
+            <div class="amount column">
+              <span></span>
+              <p></p>
+              <span></span>
+              <p></p>
+            </div>
+            <div class="actions column flex">
+              <p class="sr-only">Ações</p>
+              <button>
+                <a class="status badge column acao" href="https://www.smiles.com.br/home">
+                  Iniciar
+                </a>
+              </button>
+            </div>
+            <div class="actions column flex">
+              <p class="sr-only">Ações</p>
+            </div>
+          </div>
+    </section>
+  </div>
+  <!-- end container -->
+
+  <div class="modal-wrapper">
+    <div class="modal">
+      <img src="/images/trash-48.svg" alt="Excluir Job" title="Excluir Job" />
+      <h3>Excluir Viagem</h3>
+      <p>Quer mesmo excluir essa viagem? <br />
+        Ela será apagada para sempre.
+      <p>
+      <footer>
+        <a class="button gray" href="#">Cancelar</a>
+        <button class="button red" type="submit" form="delete-job">Excluir Viagem</button>
+      </footer>
+    </div>
+    <form method="post" action="/job/delete" id="delete-job"></form>
+  </div>
+  <!-- end modal-wrapper -->
+</body>
+<footer class="copyright">
+  Copyright©2001-2020, SmileGo Company. Todos os direitos reservados.
+</footer>
+
+</html>

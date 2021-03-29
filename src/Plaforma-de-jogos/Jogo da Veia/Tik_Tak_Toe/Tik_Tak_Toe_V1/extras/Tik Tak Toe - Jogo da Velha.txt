@@ -1,0 +1,26 @@
+﻿**Tik Tak Toe - Jogo da Velha 
+
+
+**Eu não tive muitas idéias além de combinar os botões com o fundo de tela e fazer dois modelos um com glassmorphism (para treinar) e o outro só combinei o fundo e a cor (do botão de winner final), então...  
+
+...Vamos testar o jogo
+nos navegadores do Windows 10:
+1-Brave, 2-Firefox, 3-Vivaldi e 4-Chrome! 
+
+Obrigado por assistir curta e comente =D
+
+
+Aperte F5 para reiniciar, pois bugou o glassmorphism quando vencememos!
+
+
+
+
+
+
+
+Antigo teste.
+No Vivaldi ele não abre a 2a.versão, bugou!
+
+*correções=
+*vecemos não vecemememos
+*glasmorpism não glasmorpims

@@ -1,0 +1,119 @@
+/* cores da smiles
+color: #7c7c7c;
+color: #333;
+color: #fff;
+color: #ff5a00;
+*/
+
+/* global remove user-agent styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* custom vars */
+:root {
+  --color-background: #F0F2F5;
+  --color-text: #FCFDFF;
+  --color-primary: #ff5a00;
+  --color-secondary:  #7c7c7c;
+  --color-secondary-hover: #FA9C2D;
+  
+  --color-input-background: #F8F8FC;
+  --color-button-text: #4F4F5B;
+  --color-hairline-in-dark: #4F4F5B;
+  --color-hairline-in-light: #fff;
+
+  --color-card-background: var(--color-text);
+  --color-card-title: #ff5a00;
+  --color-card-label: #fff;
+  --color-card-content: #fff;
+
+  --color-cancel: #4F4F5B;
+  --color-delete: red; 
+  --color-save: #36B336;
+  
+  --color-badge-progress-text: var(--color-save);
+  --color-badge-progress-background: #E8F8E8;
+  --color-badge-done-text: var(--color-card-title);
+  --color-badge-done-background: #E8F8E8;
+
+  --color-header-inner-title: #fff;
+
+}
+
+/* user-agent font-size is 16px, let's make it responsive */
+@media(max-width: 1080px) {
+  html {
+    font-size: 93.75%; /* 15px */
+  }
+}
+
+@media(max-width: 970px) {
+  html {
+    font-size: 87.5%; /* 14px */
+  }
+}
+
+@media(max-width:700px) {
+  :root {
+    font-size: 75%; /* 12px */
+  }
+}
+
+@media(max-width: 590px) {
+  :root {
+    font-size: 62.25%; /* 10px */
+  }
+}
+
+/* tags styling */
+body {
+  background: var(--color-background);
+}
+
+body,
+input,
+button,
+textarea {
+  font: 500 1rem Inter;
+  color: var(--color-text);
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* basic classes */
+.container {
+  width: min(1440px, 90vw);
+  margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.separator {
+  height: 1px;
+  background-color: var(--color-hairline-in-dark);
+  margin: 1rem 0;
+}
+
+.separator.light {
+  background-color: #E1E3E5;
+}
+
+.flex {
+  display: flex;
+}
